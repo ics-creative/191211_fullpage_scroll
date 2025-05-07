@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <title>フルページスクロール</title>
-    <script src="smoothscroll.js"></script>
     <style>
       * {
         margin: 0;
@@ -24,7 +23,6 @@
         height: 100vh;
         scroll-snap-type: y mandatory;
         overflow-y: auto;
-        -webkit-overflow-scrolling: touch;
       }
 
       .section {
@@ -76,6 +74,7 @@
       .section3 .innerScroll {
         height: 80%;
         overflow-y: scroll;
+        overscroll-behavior-y: none;
       }
 
       .section4 {
